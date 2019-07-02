@@ -15,23 +15,25 @@
 
 
 
-<meta name="description" content="Angr符号执行">
+<meta name="description" content="IPv6(Internet Protocol Version 6)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Angr应用">
-<meta property="og:url" content="http://xq.dropsec.xyz/2018/10/09/Angr应用/index.html">
+<meta property="og:title" content="IPv6基础探析-II">
+<meta property="og:url" content="http://xq.dropsec.xyz/2018/10/11/IPv6基础探析-II/index.html">
 <meta property="og:site_name" content="M1s5p">
-<meta property="og:description" content="Angr符号执行">
-<meta property="og:image" content="http://otc7tld02.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181009114143.png">
-<meta property="og:image" content="http://otc7tld02.bkt.clouddn.com/IDA__%E5%88%86%E6%9E%900.png">
-<meta property="og:image" content="http://otc7tld02.bkt.clouddn.com/IDA_%E5%88%86%E6%9E%901.png">
-<meta property="og:image" content="http://otc7tld02.bkt.clouddn.com/IDA_%E5%88%86%E6%9E%902.png">
-<meta property="og:image" content="http://otc7tld02.bkt.clouddn.com/find_avoid.png">
-<meta property="og:image" content="http://otc7tld02.bkt.clouddn.com/result.png">
-<meta property="og:updated_time" content="2018-10-10T09:38:01.349Z">
+<meta property="og:description" content="IPv6(Internet Protocol Version 6)">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndckr9jj30dr048dfq.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndcl0u5j30dn03k74a.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndcl0u5j30dn03k74a.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fx8ndckyzsj30dm03d74e.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/0060lm7Tly1fx8ndclfymj30e002it8q.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0060lm7Tly1fx8ndcl9xmj30es07jwff.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fx8ndenecaj30ff08q0tx.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0060lm7Tly1fx8ndcks2mj30dg01raa2.jpg">
+<meta property="og:updated_time" content="2018-11-15T04:47:32.283Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Angr应用">
-<meta name="twitter:description" content="Angr符号执行">
-<meta name="twitter:image" content="http://otc7tld02.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181009114143.png">
+<meta name="twitter:title" content="IPv6基础探析-II">
+<meta name="twitter:description" content="IPv6(Internet Protocol Version 6)">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndckr9jj30dr048dfq.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -63,7 +65,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Angr应用 | M1s5p</title>
+<title>IPv6基础探析-II | M1s5p</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -290,11 +292,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-Angr应用" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-IPv6基础探析-II" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/10/09/Angr应用/" class="article-date">
-      <time datetime="2018-10-09T02:08:34.000Z" itemprop="datePublished">2018-10-09</time>
+      <a href="/2018/10/11/IPv6基础探析-II/" class="article-date">
+      <time datetime="2018-10-11T09:21:00.000Z" itemprop="datePublished">2018-10-11</time>
 </a>
 
 
@@ -309,7 +311,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Angr应用
+      IPv6基础探析-II
     </h1>
   
 
@@ -318,13 +320,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/binary/">binary</a>
+    <a class="article-category-link" href="/categories/protocol/">protocol</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angr/">Angr</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IPv6/">IPv6</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -334,53 +336,161 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Angr符号执行<br><a id="more"></a></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前已经把Angr下的所有方法进行了学习了解，但停留于表面等于没学，需要结合相关的题目进行应用才可以正确掌握。Angr在github的源码中以及提供有一个example的文件夹，里面包含了许多难易不一的比赛题目以及基于Angr的解题脚本。<br><a href="https://github.com/angr/angr-doc" target="_blank" rel="external">链接在这里</a>。</p>
-<p>参考：Angr状态选项列表：<a href="https://docs.angr.io/appendix/options" target="_blank" rel="external">https://docs.angr.io/appendix/options</a></p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>这里以一道简单的题目作为例子进行学习：ais3_crackme,在linux下查看可以看到这个程序是一个64位程序</p>
-<p><img src="http://otc7tld02.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181009114143.png" alt=""></p>
-<p>我们可以直接把程序脱到64位IDA下进行分析：</p>
-<p><img src="http://otc7tld02.bkt.clouddn.com/IDA__%E5%88%86%E6%9E%900.png" alt=""></p>
-<p>第一眼看来很简单，只要if中的条件能够达成就可以了，那么重点就在verify。</p>
-<p><img src="http://otc7tld02.bkt.clouddn.com/IDA_%E5%88%86%E6%9E%901.png" alt=""></p>
-<p>程序自带的数据：<br><img src="http://otc7tld02.bkt.clouddn.com/IDA_%E5%88%86%E6%9E%902.png" alt=""><br>就是程序自带的数据与指令行的输入进行处理后的结果进行比较，满足条件即可。</p>
-<p>如果没有angr我们可以选择爆破，构造对应条件爆破对位字符即可。脚本如下：</p>
-<pre><code>import string
-key=[ 0xCA, 0x70, 0x93, 0xC8, 0x06, 0x54, 0xD2, 0xD5, 0xDA, 0x6A,
-  0xD1, 0x59, 0xDE, 0x45, 0xF9, 0xB5, 0xA6, 0x87, 0x19, 0xA5,
-  0x56, 0x6E, 0x63]
-
-
-flag=&quot;&quot;
-for i in range(len(key)):
-    for a1 in string.printable:
-            if (((((((ord(a1))&amp;0xff) ^ i) &lt;&lt; ((i ^ 9) &amp; 3))&amp;0xff) | ((((( ord(a1))&amp;0xff) ^ i) &gt;&gt; ((8 - ((i ^ 9) &amp; 3))&amp;0xff))&amp;0xff))+ 8)&amp;0xff==key[i]:
-                    flag+=a1
-print flag
-</code></pre><p>这里可以选择Angr进行解题。<br>想要使用Angr，基本的操作就是先要将程序进行加载：</p>
-<pre><code>project = angr.Project(&quot;./ais3_crackme&quot;)
-</code></pre><p>上面已经提到，这里是通过命令行获取参数args，所以我们需要claripy库构造一个符号状态，从IDA中不难看出flag的长度为23，所以设置如下：</p>
-<pre><code>u = claripy.BVS(&quot;u&quot;,23*8)
-</code></pre><p>此时我们需要获取程序的入口状态，并代入参数：</p>
-<pre><code>state = project.factory.entry_state(args=[&quot;./ais3_crackme&quot;,u])
-</code></pre><p>下面要做的就是构造一个模拟器将程序载入进行等候运行，以找寻正确答案：<br>    sm = project.factory.simulation_manager(state)</p>
-<p>下面就是运行程序，但是这里我们可以进行一些小小的设置，这个题目的尽头有两种可能，成功提示，错误提示，或者就是没有思路。emmm，那么在尝试的过程中会触碰到多条路径，探索的过程中的限制我们先不讨论，我们可以设置尽头，我们只想要能够通向成功的路径。</p>
-<p><img src="http://otc7tld02.bkt.clouddn.com/find_avoid.png" alt=""></p>
-<p>所以我们可以在运行的时候加入如下限制，find后面跟的就是正确结果，avoid就是错误结果:</p>
-<pre><code>sm.explore(find=0x400602,avoid=0x40060E)
-</code></pre><p>下面使用eval将找到值进行转换得到结果就是flag了(cast_to就是转换的类型，目前只能指出int和str两种)：</p>
-<pre><code>solution = found.solver.eval(argv1, cast_to=str)
-</code></pre><p>最终跑出结果：</p>
-<p><img src="http://otc7tld02.bkt.clouddn.com/result.png" alt=""></p>
-<p>脚本在题目所在目录下已经包含，这里就不贴了。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>Angr通俗而言就是爆破，但是在其中包含有许多其他的技术，约束求解、解析程序等。上述题目解答逻辑较为清晰，所以可以自主编写爆破脚本进行解答。但是有的题目设置了比较复杂的算法在其中，这时候编写解题脚本的过程就较为复杂,且不考虑出错的情况。所以Angr可以帮助更快的得到结果。大致的解题过程：</p>
+        <p>IPv6(Internet Protocol Version 6)<br><a id="more"></a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在上一次的学习中对IPv6的地址结构、类型等相关知识进行了学习整理，但那不是IPv6的基础的全部(好吧，是我忘记整理了)，这里就把IPv6的数据包构成细节进行整理。</p>
+<h2 id="IPv6首部格式"><a href="#IPv6首部格式" class="headerlink" title="IPv6首部格式"></a>IPv6首部格式</h2><p>emmm，这个已经在上一次记录中简单提及，真的是很简单啊，这里就略微详细的进行记录一下。</p>
+<p>每一个IPv6分组中都一定有一个IPv6首部，并且是定长的。长为40字节，包含有传送分组所需的最小字段数。如下图所示就是IPv6首部结构。</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndckr9jj30dr048dfq.jpg" alt=""></p>
+<ul>
+<li>版本：4bit，包含表示IPv6的值6</li>
+<li>流量级别：8bit，端节点借助这个字段生成不同类别及优先级的流量。那些不同分组的流量类别决定了中间节点的分组转发。源节点默认该字段为0，在通往目的节点过程可能被修改。</li>
+<li>流标签：20bit，用以区分不同流量类型流的方法。</li>
+<li>净荷长度：16bit，表示跟在IPv6首部后面的IPv6分组长度，包含扩展首部和高层协议净荷长度。</li>
+<li>下一首部：8bit，表示跟在IPv6首部后面的协议或扩展首部。</li>
+<li>跳数限制：8bit，传输到目的节点过程中分组可以被路由转发的次数。每次转发字段减1，置零后丢弃分组。</li>
+<li>源地址：128bit，装载了分组源节点的Iv6地址</li>
+<li>目的地址：128bit，装载了分组目的节点的IPv6地址。</li>
+</ul>
+<h2 id="IPv6扩展首部"><a href="#IPv6扩展首部" class="headerlink" title="IPv6扩展首部"></a>IPv6扩展首部</h2><p>扩展首部是IPv6由IPv4的选项概念扩展而来的，每个扩展首部都实现了一些可选的特性。它的工作方式类似于高层协议，除非被要求处理，否则拓展首部不一定被处理执行。因此，带有端到端选项特性的IPv6转发的重量级更轻一些。而且，扩展首部可能比IPv4选项字段的最大长度大出许多，这样也为未来诞出的其他选项提供了空间。</p>
+<p>拓展首部的内容如下：</p>
 <ol>
-<li>对题目进行分析找到正确路径地址，运行中的检验条件，flag长度等一系列信息。</li>
-<li>加载程序，设置参数(根据分析得到的flag长度进行设置，也可设置一个大致数值，关乎效率)，获得入口状态(根据需求，添加参数，添加状态选项等)</li>
-<li>根据IDA下分析添加约束条件，提高效率。</li>
-<li>使用模拟器进行符号执行求解。</li>
-<li>获得运算结果。</li>
+<li>逐跳选项首部（Hop-by-Hop options header）8字节倍数</li>
+<li>路由首部（Routing header）8字节倍数</li>
+<li>片首部（Fragment header）8字节倍数</li>
+<li>目的选项首部(Destination options header)8字节倍数</li>
+<li>IPsec的两个附加拓展首部：鉴别首部AH(Authentication header) 封装安全净荷首部ESP（Encapsulating Security Payload header）。4字节倍数</li>
 </ol>
+<p>扩展首部的位置在IPv6首部和高层协议首部之间，对于扩展首部的处理顺序取决于源端在分组中的首部顺序设置。一般来说，高层协议会终止扩展首部。如果高层协议不存在于分组，那么就会用一个虚构首部(即无下一个首部)来表示首部链结束。</p>
+<p>如下所示是拓展首部的定义信息：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名字</th>
+<th style="text-align:center">前一个首部中的下一个首部字段值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Hop-by-Hop options</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Destination options</td>
+<td style="text-align:center">60</td>
+</tr>
+<tr>
+<td style="text-align:center">Routing</td>
+<td style="text-align:center">43</td>
+</tr>
+<tr>
+<td style="text-align:center">Fragment</td>
+<td style="text-align:center">44</td>
+</tr>
+<tr>
+<td style="text-align:center">AH</td>
+<td style="text-align:center">51</td>
+</tr>
+<tr>
+<td style="text-align:center">ESP</td>
+<td style="text-align:center">50</td>
+</tr>
+<tr>
+<td style="text-align:center">No Next</td>
+<td style="text-align:center">59</td>
+</tr>
+</tbody>
+</table>
+<p>对于一个分组中扩展首部的顺序和出现的次数建议如下所示，并不一定遵循该顺序，发送节点应该遵循，但接受节点不应该假定输入分组的扩展首部是按照该顺序，逐跳选项首部除外，他必须跟在IPv6首部后面，且不能出现多次。</p>
+<p>另外目的首部可以看到出现了两次，前者由路由首部列出的所有中间节点处理，后者由最终的分组目的节点处理。移动IPv6会在路由首部和片首部之间指定一个目的首部。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">顺序</th>
+<th style="text-align:center">扩展首部</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">IPv6首部</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Hop-by-Hop</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Destination</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Routing</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Fragment</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Ipsec(AH or ESP)</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">Destination</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">高层首部</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Hop-by-Hop"><a href="#Hop-by-Hop" class="headerlink" title="Hop-by-Hop"></a>Hop-by-Hop</h3><p>逐条选项首部是由每个中间节点(例如通向目的地分组传输路径的中间路由器)检查并处理的，源节点和目的节点也对逐条选项首部进行处理。</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndcl0u5j30dn03k74a.jpg" alt=""></p>
+<ul>
+<li>下一跳首部：8bit，标识紧跟在目的选项首部之后的协议首部。</li>
+<li>扩展首部长度：8bit，以8字节为单位的首部长度（不包含第一个8字节)。</li>
+<li>选项：该字段是变长的，但必须保证逐跳选项首部是8字节倍数。</li>
+</ul>
+<h3 id="Destination"><a href="#Destination" class="headerlink" title="Destination"></a>Destination</h3><p><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fx8ndcl0u5j30dn03k74a.jpg" alt=""></p>
+<ul>
+<li>下一首部：8bit，标识紧跟在目的选项首部之后的协议首部。</li>
+<li>扩展首部长度：8bit，以8字节为单位的首部长度（不包含第一个8字节)。</li>
+<li>选项：8bit，以8字节为单位的首部长度（不包含第一个8字节)。</li>
+</ul>
+<h3 id="Routing"><a href="#Routing" class="headerlink" title="Routing"></a>Routing</h3><p>执行源端路由选择的源节点用路由首部列出分组上所要经过的中间节点。</p>
+<p><img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fx8ndckyzsj30dm03d74e.jpg" alt=""></p>
+<ul>
+<li>下一个首部：8bit，标识紧跟在目的选项首部之后的协议首部。</li>
+<li>扩展首部长度：8bit，以8字节为单位的首部长度（不包含第一个8字节)。</li>
+<li>路由类型：8bit，表示了路由首部的类型编号，IPv6拥有多类路由首部，[RFC2460]定义了类型0路由首部。</li>
+<li>剩余段数：8bit，说明了到达目的节点过程中剩余的中间节点数</li>
+<li>类型特有数据：该字段包含路由类型字段中指定的类型值特有的数据。</li>
+</ul>
+<p>对于不认识的路由首部类型，若剩余段数字段为零，接受节点就会忽略它，并从该不认识路由首部之后的那个首部开始，继续对分组进行处理。另一方面，如果剩余字段值非零，那么节点就会丢弃分组，并生成一条错误报文(参数问题)。</p>
+<h3 id="Fragment"><a href="#Fragment" class="headerlink" title="Fragment"></a>Fragment</h3><p>IPv4中的分片机制已然证明了网络层的分组分片是有害的，分片增加了网络带宽，以及执行分片操作的路由器和执行重装功能的目的节点的处理开销。同时一个原始分组中部分片的丢失会极大降低整体的性能。</p>
+<p>IPv6中未防止此类问题，不再鼓励进行分组分片，并且提出一个机制来找出相互通信节点间的最小链路MTU(最大传输单元)，以便在源节点上确定正确的分组长度。这种机制被称为PMTU(路径MTU发现)。</p>
+<p>但是在形如发送打的UDP或ICMPv6分组的特别情况下，还是下需要进行分片和重装，在IPv6中，只有分组源端可以进行分片，而不是如同IPv4那也在路由器中对分组分片，IPv6中路由器会向分组源端发送错误报文(分组过长)来通知进行分片。</p>
+<p><img src="http://wx4.sinaimg.cn/mw690/0060lm7Tly1fx8ndclfymj30e002it8q.jpg" alt=""></p>
+<ul>
+<li>下一个首部：8bit，标识紧跟在目的选项首部之后的协议首部</li>
+<li>Reserve：8bit，发送方保留字段置零，接收方忽略。</li>
+<li>片偏移量：13bit，表示紧跟在片首部之后的数据相对于原始分组中可分片部分的起始处的偏移量(8字节为单位)</li>
+<li>Res：2bit，发送方保留字段置零，接收方忽略。</li>
+<li>M：1bit，bool类型，表示后面是否还存在分片，置1则表示多个分片，置零则表示当前为最后一个分片。</li>
+<li>标识：32bit，用于使接收方识别出属于同一个分组的片，分组源端会为每个需要分片的分组生成一个不同的标识值，此值比IPv4中的标识字段大，降低了标识冲突可能性。</li>
+</ul>
+<p>下面的连个图分别描述了分片和重组的过程：</p>
+<p>分片：</p>
+<p><img src="http://wx2.sinaimg.cn/mw690/0060lm7Tly1fx8ndcl9xmj30es07jwff.jpg" alt=""></p>
+<p>重组：</p>
+<p><img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fx8ndenecaj30ff08q0tx.jpg" alt=""></p>
+<h3 id="IPv6选项"><a href="#IPv6选项" class="headerlink" title="IPv6选项"></a>IPv6选项</h3><p>Hop-by-Hop和Destination首部中都装载了数量可变的选项值，如下所示是值的编码格式：</p>
+<ul>
+<li>选项类型：8bit，表示选项的类型。</li>
+<li>选项数据长度：8bit，说明了以字节为单位的选项数据长度</li>
+<li>选项数据：变长，装载了选项特有的数据</li>
+</ul>
+<p><img src="http://wx2.sinaimg.cn/mw690/0060lm7Tly1fx8ndcks2mj30dg01raa2.jpg" alt=""></p>
 
       
     </div>
@@ -389,13 +499,13 @@ print flag
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/10/09/Angr应用/">Angr应用</a></p>
+        <p><span>本文标题:</span><a href="/2018/10/11/IPv6基础探析-II/">IPv6基础探析-II</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">M1s5p</a></p>
-        <p><span>发布时间:</span>2018-10-09, 10:08:34</p>
-        <p><span>最后更新:</span>2018-10-10, 17:38:01</p>
+        <p><span>发布时间:</span>2018-10-11, 17:21:00</p>
+        <p><span>最后更新:</span>2018-11-15, 12:47:32</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/10/09/Angr应用/" title="Angr应用">http://xq.dropsec.xyz/2018/10/09/Angr应用/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://xq.dropsec.xyz/2018/10/09/Angr应用/　　作者: M1s5p" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/10/11/IPv6基础探析-II/" title="IPv6基础探析-II">http://xq.dropsec.xyz/2018/10/11/IPv6基础探析-II/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://xq.dropsec.xyz/2018/10/11/IPv6基础探析-II/　　作者: M1s5p" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -408,15 +518,15 @@ print flag
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/10/10/IPv6基础探析-I/">
-                    IPv6基础探析-I
+                <a href="/2018/10/17/ICMPv6学习/">
+                    ICMPv6学习
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/09/29/Angr学习记录/">
-                    Angr学习记录
+                <a href="/2018/10/10/IPv6基础探析-I/">
+                    IPv6基础探析-I
                 </a>
             </div>
         
@@ -428,7 +538,7 @@ print flag
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">2.</span> <span class="toc-text">正文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小结"><span class="toc-number">3.</span> <span class="toc-text">小结</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IPv6首部格式"><span class="toc-number">2.</span> <span class="toc-text">IPv6首部格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IPv6扩展首部"><span class="toc-number">3.</span> <span class="toc-text">IPv6扩展首部</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hop-by-Hop"><span class="toc-number">3.1.</span> <span class="toc-text">Hop-by-Hop</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Destination"><span class="toc-number">3.2.</span> <span class="toc-text">Destination</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Routing"><span class="toc-number">3.3.</span> <span class="toc-text">Routing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Fragment"><span class="toc-number">3.4.</span> <span class="toc-text">Fragment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IPv6选项"><span class="toc-number">3.5.</span> <span class="toc-text">IPv6选项</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -470,7 +580,7 @@ print flag
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/10/10/IPv6基础探析-I/" title="上一篇: IPv6基础探析-I">
+            <a href="/2018/10/17/ICMPv6学习/" title="上一篇: ICMPv6学习">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -478,7 +588,7 @@ print flag
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/09/29/Angr学习记录/" title="下一篇: Angr学习记录">
+            <a href="/2018/10/10/IPv6基础探析-I/" title="下一篇: IPv6基础探析-I">
                 <i class="fa fa-angle-right"></i>
             </a>
         
